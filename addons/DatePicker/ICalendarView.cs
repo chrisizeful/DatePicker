@@ -7,4 +7,5 @@ public interface ICalendarView
 
     void Previous();
     void Next();
+    void Refresh();
 }

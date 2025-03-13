@@ -52,6 +52,10 @@ public partial class Calendar : Control
         };
         Previous.Pressed += () => View.Previous();
         Next.Pressed += () => View.Next();
+    }
+
+    public override void _EnterTree()
+    {
         GetTree().Root.GuiFocusChanged += OnGuiFocusChanged;
     }
 

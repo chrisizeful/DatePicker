@@ -42,7 +42,7 @@ public partial class MonthView : VBoxContainer, ICalendarView
 		Refresh();
 	}
 
-	void Refresh()
+	public void Refresh()
     {
         Calendar.Header.Text = Calendar.DateTime.ToString("MMMM yyyy");
 		DateTime previous = Calendar.DateTime.AddMonths(-1);

@@ -40,7 +40,7 @@ public partial class YearView : GridContainer, ICalendarView
 		Refresh();
 	}
 
-	void Refresh()
+	public void Refresh()
 	{
 		Calendar.Header.Text = Calendar.DateTime.ToString("yyyy");
 		for (int i = 0; i < GetChildCount(); i++)

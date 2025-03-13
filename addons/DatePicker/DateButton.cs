@@ -13,18 +13,15 @@ public partial class DateButton : Button
 		if (Calendar == null)
 		{
 			Calendar = ResourceLoader.Load<PackedScene>("res://addons/DatePicker/Calendar.tscn").Instantiate<Calendar>();
-			Calendar.Visible = false;
 			GetTree().Root.CallDeferred(Node.MethodName.AddChild, Calendar);
 		}
+		Calendar.Visible = false;
+		Calendar.CalendarButton = this;
 		Calendar.Finished += () => {
 			Text = Calendar.Selected.ToString("M/d/yyyy");
 			Calendar.Visible = false;
 		};
-		Calendar.CalendarButton = this;
-		Pressed += () => {
-			if (Calendar != null)
-				Calendar.Visible = !Calendar.Visible;
-		};
+		Pressed += () => Calendar.Visible = !Calendar.Visible;
 		TreeExited += Calendar.QueueFree;
 	}
 }
