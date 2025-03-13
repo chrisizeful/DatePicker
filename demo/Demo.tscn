@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c67ad5k4nrc3x"]
 
-[ext_resource type="PackedScene" uid="uid://b6c1twaog7hui" path="res://addons/DatePicker/DateButton.tscn" id="1_wn5l8"]
+[ext_resource type="Script" uid="uid://ds2esqjkjc4h0" path="res://addons/DatePicker/DateButton.cs" id="1_uqdso"]
 
 [node name="Demo" type="Control"]
 layout_mode = 3
@@ -30,5 +30,9 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.968627, 0.976471, 0.968627, 1)
 text = "Click to select a date!"
 
-[node name="DateButton" parent="MarginContainer/VBoxContainer" instance=ExtResource("1_wn5l8")]
+[node name="DateButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_type_variation = &"DateButton"
+text = "3/15/2025"
+script = ExtResource("1_uqdso")
+metadata/_custom_type_script = "uid://ds2esqjkjc4h0"

@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="DatePicker"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/DatePicker/plugin.cfg")
+
 [gui]
 
 theme/custom="uid://cyk21t3ikf1xm"
