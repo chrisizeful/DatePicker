@@ -17,13 +17,15 @@ public partial class DateButton : Button
 			GetTree().Root.CallDeferred(Node.MethodName.AddChild, Calendar);
 		}
 		Calendar.DateSelected += () => {
+			if (Calendar.View is not MonthView)
+				return;
 			Text = Calendar.Selected.ToString("M/d/yyyy");
 			Calendar.Visible = false;
 		};
 		Calendar.CalendarButton = this;
 		Pressed += () => {
 			if (Calendar != null)
-				Calendar.Visible = true;
+				Calendar.Visible = !Calendar.Visible;
 		};
 	}
 }

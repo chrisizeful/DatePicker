@@ -62,7 +62,7 @@ public partial class Calendar : Control
 
     void OnGuiFocusChanged(Node focus)
     {
-        if (!IsAncestorOf(focus))
+        if (!IsAncestorOf(focus) && focus is not DateButton)
             Visible = false;
     }
 
