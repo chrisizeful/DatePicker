@@ -16,9 +16,7 @@ public partial class DateButton : Button
 			Calendar.Visible = false;
 			GetTree().Root.CallDeferred(Node.MethodName.AddChild, Calendar);
 		}
-		Calendar.DateSelected += () => {
-			if (Calendar.View is not MonthView)
-				return;
+		Calendar.Finished += () => {
 			Text = Calendar.Selected.ToString("M/d/yyyy");
 			Calendar.Visible = false;
 		};
@@ -27,5 +25,6 @@ public partial class DateButton : Button
 			if (Calendar != null)
 				Calendar.Visible = !Calendar.Visible;
 		};
+		TreeExited += Calendar.QueueFree;
 	}
 }
