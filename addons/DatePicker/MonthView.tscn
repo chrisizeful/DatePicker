@@ -1,0 +1,378 @@
+[gd_scene load_steps=3 format=3 uid="uid://hiv2ckjbs43p"]
+
+[ext_resource type="Script" uid="uid://bc88158gaxg4f" path="res://addons/DatePicker/MonthView.cs" id="1_iouni"]
+[ext_resource type="ButtonGroup" uid="uid://bqxxq56yxl44h" path="res://addons/DatePicker/CalendarGroup.tres" id="2_nfkp2"]
+
+[node name="MonthView" type="VBoxContainer" node_paths=PackedStringArray("Buttons")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iouni")
+Buttons = NodePath("Days")
+
+[node name="DayOfWeek" type="GridContainer" parent="."]
+layout_mode = 2
+columns = 7
+
+[node name="Sunday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Sun"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Mon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Tue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Wed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thursday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Thu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Friday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Fri"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Saturday" type="Label" parent="DayOfWeek"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"GrayLabel"
+text = "Sat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="GridContainer" parent="."]
+layout_mode = 2
+columns = 7
+
+[node name="Button0" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button28" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button1" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button2" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button3" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button4" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button5" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button6" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button7" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button8" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button9" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button10" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button11" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button12" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button13" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button14" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button15" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button16" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button17" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button18" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button19" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button20" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button21" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button22" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button23" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button24" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button25" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button26" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button27" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button29" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button30" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button31" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button32" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button33" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button34" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button35" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button36" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button37" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button38" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button39" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button40" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")
+
+[node name="Button41" type="Button" parent="Days"]
+custom_minimum_size = Vector2(52, 36)
+layout_mode = 2
+theme_type_variation = &"GrayButton"
+toggle_mode = true
+button_group = ExtResource("2_nfkp2")

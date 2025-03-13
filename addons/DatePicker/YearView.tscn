@@ -1,0 +1,123 @@
+[gd_scene load_steps=3 format=3 uid="uid://n5ra5w5aupx7"]
+
+[ext_resource type="Script" uid="uid://b5qslpdcfyikx" path="res://addons/DatePicker/YearView.cs" id="1_hiiks"]
+[ext_resource type="ButtonGroup" uid="uid://bqxxq56yxl44h" path="res://addons/DatePicker/CalendarGroup.tres" id="2_2qddy"]
+
+[node name="YearView" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+script = ExtResource("1_hiiks")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button7" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button8" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button9" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button10" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button11" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")
+
+[node name="Button12" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"GrayButton"
+theme_override_colors/font_color = Color(0.133333, 0.137255, 0.137255, 1)
+toggle_mode = true
+button_group = ExtResource("2_2qddy")

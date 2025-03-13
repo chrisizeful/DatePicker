@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgn7djiy1xhlu"]
+
+[ext_resource type="Script" uid="uid://c134lf0pxabrf" path="res://addons/DatePicker/Calendar.cs" id="1_heut6"]
+[ext_resource type="Texture2D" uid="uid://bc1nyxgvt0pi7" path="res://addons/DatePicker/icons/icon-arrow-up.png" id="2_7qdt0"]
+[ext_resource type="Texture2D" uid="uid://b2g7u8npvy5gv" path="res://addons/DatePicker/icons/icon-arrow-down.png" id="3_dm0pi"]
+[ext_resource type="PackedScene" uid="uid://n5ra5w5aupx7" path="res://addons/DatePicker/YearView.tscn" id="5_qmkbm"]
+
+[node name="Calendar" type="PanelContainer" node_paths=PackedStringArray("Header", "Next", "Previous", "ViewParent")]
+offset_right = 420.0
+offset_bottom = 400.0
+theme_type_variation = &"RoundedPanelContainer"
+script = ExtResource("1_heut6")
+Header = NodePath("VboxContainer/PanelContainer/HeaderContainer/HeaderButton")
+Next = NodePath("VboxContainer/PanelContainer/HeaderContainer/Next")
+Previous = NodePath("VboxContainer/PanelContainer/HeaderContainer/Previous")
+ViewParent = NodePath("VboxContainer/View")
+
+[node name="VboxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PanelContainer" type="PanelContainer" parent="VboxContainer"]
+layout_mode = 2
+theme_type_variation = &"LightGrayPanel"
+
+[node name="HeaderContainer" type="HBoxContainer" parent="VboxContainer/PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HeaderButton" type="Button" parent="VboxContainer/PanelContainer/HeaderContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"BoldLabel"
+text = "1980"
+flat = true
+alignment = 0
+
+[node name="Previous" type="Button" parent="VboxContainer/PanelContainer/HeaderContainer"]
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("2_7qdt0")
+flat = true
+
+[node name="Next" type="Button" parent="VboxContainer/PanelContainer/HeaderContainer"]
+layout_mode = 2
+theme_type_variation = &"IconButton"
+icon = ExtResource("3_dm0pi")
+flat = true
+
+[node name="View" type="Control" parent="VboxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="YearView" parent="VboxContainer/View" node_paths=PackedStringArray("Calendar") instance=ExtResource("5_qmkbm")]
+layout_mode = 1
+Calendar = NodePath("../../..")
