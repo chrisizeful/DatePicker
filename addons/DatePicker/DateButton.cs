@@ -5,6 +5,9 @@ namespace DatePicker;
 public partial class DateButton : Button
 {
 
+	/// <summary>
+	/// The calendar that this button will display. If null, a new calendar will be created.
+	/// </summary>
 	[Export]
 	public Calendar Calendar { get; set; }
 

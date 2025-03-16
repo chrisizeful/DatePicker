@@ -3,14 +3,26 @@ using System;
 
 namespace DatePicker;
 
+/// <summary>
+/// Displays the days in a month.
+/// </summary>
 public partial class MonthView : VBoxContainer, ICalendarView
 {
 
+    /// <summary>
+    /// The buttons that represent the days in a month.
+    /// </summary>
 	[Export]
     public GridContainer Buttons { get; private set; }
+    /// <summary>
+	/// The calendar that this view is a part of.
+	/// </summary>
     [Export]
 	public Calendar Calendar { get; set; }
 
+    /// <summary>
+    /// One date per button. The index of the button corresponds to the index of the date.
+    /// </summary>
 	DateTime[] dates;
 
 	public override void _Ready()
@@ -30,18 +42,27 @@ public partial class MonthView : VBoxContainer, ICalendarView
         Refresh();
 	}
 
+    /// <summary>
+    /// When the user clicks the previous button (i.e. go to the previous year).
+    /// </summary>
 	public void Previous()
 	{
 		Calendar.DateTime = Calendar.DateTime.AddMonths(-1);
 		Refresh();
 	}
 
+    /// <summary>
+    /// When the user clicks the next button (i.e. go to the next year).
+    /// </summary>
 	public void Next()
 	{
 		Calendar.DateTime = Calendar.DateTime.AddMonths(1);
 		Refresh();
 	}
 
+    /// <summary>
+    /// Update the view to reflect the selected date.
+    /// </summary>
 	public void Refresh()
     {
         Calendar.Header.Text = Calendar.DateTime.ToString("MMMM yyyy");

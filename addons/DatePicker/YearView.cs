@@ -3,9 +3,15 @@ using System.Globalization;
 
 namespace DatePicker;
 
+/// <summary>
+/// Displays the months of a year.
+/// </summary>
 public partial class YearView : GridContainer, ICalendarView
 {
 
+	/// <summary>
+	/// The calendar that this view is a part of.
+	/// </summary>
 	[Export]
 	public Calendar Calendar { get; set; }
 
