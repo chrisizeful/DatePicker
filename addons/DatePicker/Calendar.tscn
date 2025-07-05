@@ -7,7 +7,7 @@
 
 [node name="Calendar" type="PanelContainer" node_paths=PackedStringArray("Header", "Next", "Previous", "ViewParent")]
 offset_right = 420.0
-offset_bottom = 400.0
+offset_bottom = 390.0
 theme_type_variation = &"RoundedPanelContainer"
 script = ExtResource("1_heut6")
 Header = NodePath("VboxContainer/PanelContainer/HeaderContainer/HeaderButton")

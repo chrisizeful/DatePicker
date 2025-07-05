@@ -124,7 +124,17 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ov74n"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5hh4"]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tu4is"]
 bg_color = Color(0.509804, 0.545098, 0.596078, 1)
@@ -208,7 +218,7 @@ DateButton/styles/normal = SubResource("StyleBoxFlat_lhhd1")
 GrayButton/base_type = &"Button"
 GrayButton/styles/focus = SubResource("StyleBoxFlat_d80be")
 GrayButton/styles/hover = SubResource("StyleBoxFlat_nodcu")
-GrayButton/styles/normal = SubResource("StyleBoxEmpty_ov74n")
+GrayButton/styles/normal = SubResource("StyleBoxFlat_j5hh4")
 GrayButton/styles/pressed = SubResource("StyleBoxFlat_tu4is")
 GrayLabel/base_type = &"Label"
 GrayLabel/colors/font_color = Color(0.509804, 0.545098, 0.596078, 1)
